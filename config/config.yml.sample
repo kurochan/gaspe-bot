@@ -17,3 +17,5 @@ twitter:
     consumer_secret: '2RabNnkbveEciZj3j67U72HEwowKwaLaxWUlXqqF123'
     access_token: '2543425272-J5lWxTjkHmCQVRCsE4wwpJHV0X7QnROjhatKPjk'
     access_token_secret: '9h1UvD0Iw9y1WdldKxLwxh2WMSysoH1GT7fEXIL6Byw'
+bot:
+    target: 'twitter user name'
