@@ -1,4 +1,3 @@
 *~
 *.swp
-config/config.rb
-dump.rdb
+config/config.yml

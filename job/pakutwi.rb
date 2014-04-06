@@ -1,8 +1,8 @@
 class PakuTwiJob
   def call
-    data = [
-      'てすと'
-    ]
-    TwitterClient.instance.update data[rand data.length]
+    status = Tweet.where("screen_name = '#{CONFIG['bot']['target']}'").
+      where("text not like '%@%'").
+      where("text not like '%http%'").sample
+    TwitterClient.instance.update status.text
   end
 end

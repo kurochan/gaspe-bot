@@ -1,6 +1,7 @@
 class YoruhoJob
   def call
     data = [
+      '夜だよ！',
       '明日こそ清楚の底力見せる時だ',
       'よるほー',
       'くっそ12時なう',

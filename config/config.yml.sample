@@ -1,0 +1,19 @@
+db:
+    production:
+        adapter:  mysql2
+        host:     example.com
+        username: twitter
+        password: password
+        database: twitter-bot
+
+    development:
+        adapter:  mysql2
+        host:     example.com
+        username: twitter
+        password: password
+        database: twitter-bot
+twitter:
+    consumer_key: 'kkskgm1abyKng9YAEXa8A'
+    consumer_secret: '2RabNnkbveEciZj3j67U72HEwowKwaLaxWUlXqqF123'
+    access_token: '2543425272-J5lWxTjkHmCQVRCsE4wwpJHV0X7QnROjhatKPjk'
+    access_token_secret: '9h1UvD0Iw9y1WdldKxLwxh2WMSysoH1GT7fEXIL6Byw'

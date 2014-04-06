@@ -6,10 +6,10 @@ class TwitterClient < Twitter::REST::Client
 
   def initialize
     super(
-      :consumer_key => CONSUMER_KEY,
-      :consumer_secret => CONSUMER_SECRET,
-      :access_token => ACCESS_TOKEN,
-      :access_token_secret => ACCESS_TOKEN_SECRET
+      :consumer_key => CONFIG['twitter']['consumer_key'],
+      :consumer_secret => CONFIG['twitter']['consumer_secret'],
+      :access_token => CONFIG['twitter']['access_token'],
+      :access_token_secret => CONFIG['twitter']['access_token_secret']
     )
   end
 end
