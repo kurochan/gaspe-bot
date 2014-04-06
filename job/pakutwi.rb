@@ -12,6 +12,7 @@ class PakuTwiJob
   end
 
   def ng?(str)
+    return false unless CONFIG['bot']['ng-word']
     ret = false
     CONFIG['bot']['ng-word'].each do |word|
       ret = str.include?(word)
