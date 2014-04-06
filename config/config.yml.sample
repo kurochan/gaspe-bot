@@ -19,3 +19,5 @@ twitter:
     access_token_secret: '9h1UvD0Iw9y1WdldKxLwxh2WMSysoH1GT7fEXIL6Byw'
 bot:
     target: 'twitter user name'
+    ng-word:
+    -'NG Word'
