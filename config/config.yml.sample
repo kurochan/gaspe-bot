@@ -20,4 +20,4 @@ twitter:
 bot:
     target: 'twitter user name'
     ng-word:
-    -'NG Word'
+        -'NG Word'
