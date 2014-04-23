@@ -1,6 +1,5 @@
 module Clockwork
   # botのオーナーアカウント情報を収集
-  # 最初に実行される必要があるので一番上に書く
   every 3.hours, GetOwnerJob.new
 
   # 本垢の過去のツイートをパクる
