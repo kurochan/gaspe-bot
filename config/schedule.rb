@@ -9,3 +9,5 @@ module Clockwork
   every 1.day, YoruhoJob.new, :at => '00:00'
   # every 1.seconds, TestJob.new, :thread => true
 end
+
+UserStream.instance.add_on_status_job KeywordFavJob.new

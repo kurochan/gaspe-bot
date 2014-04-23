@@ -16,6 +16,7 @@ class KeywordFavJob
     ]
     data.each do |str|
       if status.text.include? str
+        puts "Keyword favorited"
         TwitterClient.instance.favorite status.id
         break
       end

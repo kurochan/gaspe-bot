@@ -5,6 +5,7 @@ class UserStream
   include Singleton
 
   def initialize
+    @on_status_job = []
     Thread.new do
       crash_count = 0
       loop do
@@ -32,7 +33,14 @@ class UserStream
     end
   end
 
+  def add_on_status_job(job)
+    @on_status_job.push job
+  end
+
   def on_status(status)
     puts status['text']
+    @on_status_job.each do |job|
+      job.call status
+    end
   end
 end
