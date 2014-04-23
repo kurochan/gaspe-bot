@@ -2,17 +2,10 @@ class KeywordFavJob
   def call(status)
     return unless status.text
     data = [
-      '卓同',
-      'タクドウ',
-      'たくどう',
-      'がすぺ',
-      'ガスペ',
-      '清楚',
-      'せいそ',
-      '詰み',
-      '詰ん',
-      'クソネミ',
-      'ｸｿﾈﾐ',
+      '卓同', 'タクドウ', 'たくどう', 'がすぺ',
+      'ガスペ', '清楚', 'せいそ', '詰み', '詰ん',
+      'クソ', 'ｸｿﾈﾐ', 'くそ', 'くっそ',
+      'クッソ', 'ラブライブ', 'スクフェス', 'にこ'
     ]
     data.each do |str|
       if status.text.include? str
