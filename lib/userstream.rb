@@ -1,4 +1,9 @@
-class UserStreamJob
+require 'twitter'
+require 'singleton'
+
+class UserStream
+  include Singleton
+
   def initialize
     Thread.new do
       crash_count = 0
