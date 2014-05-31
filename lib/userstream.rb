@@ -38,7 +38,7 @@ class UserStream
   end
 
   def on_status(status)
-    puts status['text']
+    puts status.text
     @on_status_job.each do |job|
       job.call status
     end
