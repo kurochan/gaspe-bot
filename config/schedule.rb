@@ -11,3 +11,4 @@ module Clockwork
 end
 
 UserStream.instance.add_on_status_job KeywordFavJob.new
+UserStream.instance.add_on_status_job Weather.new
