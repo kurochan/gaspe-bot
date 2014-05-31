@@ -11,7 +11,7 @@ end
 
 class Weather
   def call(status)
-    return unless status.text && status.text.include?('天気')
+    return unless status.text && status.text.include?('天気') && status.reply?
     tokyo = WeatherJp.get :tokyo
     TwitterClient.instance.update "@#{status.user.screen_name} #{tokyo.today.to_s}", {:in_reply_to_status_id => status.id}
   end
